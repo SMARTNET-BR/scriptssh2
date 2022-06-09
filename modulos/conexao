@@ -2061,62 +2061,62 @@ exit 0' >$RCLOCAL
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mOPENSSH \033[1;31m>\033[1;37m>\033[1;32m>        \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(grep 'Port' /etc/ssh/sshd_config | cut -d' ' -f2 | grep -v 'no' | xargs)")\033[1;37m┃" && sts6="\033[1;32m☑    "
 			[[ "$(netstat -tlpn | grep 'docker' | wc -l)" != '0' ]] && {
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mCHISEL \033[1;31m>\033[1;37m>\033[1;32m>         \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(netstat -nplt | grep 'docker' | awk {'print $4'} | cut -d: -f2 | xargs)")\033[1;37m┃"
-				sts8="\033[1;32m☑     "
+				sts8="\033[1;32m◉     "
 			} || {
-				sts8="\033[1;31m☒     "
+				sts8="\033[1;31m○     "
 			}
 			[[ "$(ps x | grep 'slowdns' | grep -v 'grep' | wc -l)" != '0' ]] && {
-				sts9="\033[1;32m☑     "
+				sts9="\033[1;32m◉     "
 			} || {
-				sts9="\033[1;31m☒     "
+				sts9="\033[1;31m○     "
 			}
 			[[ "$(netstat -tlpn | grep 'sslh' | wc -l)" != '0' ]] && {
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mSSLH \033[1;31m>\033[1;37m>\033[1;32m>           \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(netstat -nplt | grep 'sslh' | awk {'print $4'} | cut -d: -f2 | xargs)")\033[1;37m┃"
-				sts7="\033[1;32m☑     "
+				sts7="\033[1;32m◉     "
 			} || {
-				sts7="\033[1;31m☒     "
+				sts7="\033[1;31m○     "
 			}
 
 			[[ "$(netstat -tlpn | grep 'openvpn' | wc -l)" != '0' ]] && {
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mOPENVPN \033[1;31m>\033[1;37m>\033[1;32m>        \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(netstat -nplt | grep 'openvpn' | awk {'print $4'} | cut -d: -f2 | xargs)")\033[1;37m┃"
-				sts5="\033[1;32m☑     "
+				sts5="\033[1;32m◉     "
 			} || {
-				sts5="\033[1;31m☒     "
+				sts5="\033[1;31m○     "
 			}
 
 			[[ "$(netstat -tlpn | grep 'python' | wc -l)" != '0' ]] && {
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mPROXY SOCKS \033[1;31m>\033[1;37m>\033[1;32m>    \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(netstat -nplt | grep 'python' | awk {'print $4'} | cut -d: -f2 | xargs)")\033[1;37m┃"
-				sts4="\033[1;32m☑     "
+				sts4="\033[1;32m◉     "
 			} || {
-				sts4="\033[1;31m☒     "
+				sts4="\033[1;31m○     "
 			}
 			[[ -e "/etc/stunnel/stunnel.conf" ]] && {
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mSSL TUNNEL \033[1;31m>\033[1;37m>\033[1;32m>     \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(netstat -nplt | grep 'stunnel' | awk {'print $4'} | cut -d: -f2 | xargs)")\033[1;37m┃"
-				sts3="\033[1;32m☑     "
+				sts3="\033[1;32m◉     "
 			} || {
-				sts3="\033[1;31m☒     "
+				sts3="\033[1;31m○     "
 			}
 			[[ "$(netstat -tlpn | grep 'dropbear' | wc -l)" != '0' ]] && {
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mDROPBEAR \033[1;31m>\033[1;37m>\033[1;32m>       \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(netstat -nplt | grep 'dropbear' | awk -F ":" {'print $4'} | xargs)")\033[1;37m┃"
-				sts2="\033[1;32m☑     "
+				sts2="\033[1;32m◉     "
 			} || {
-				sts2="\033[1;31m☒     "
+				sts2="\033[1;31m○     "
 			}
 			[[ "$(netstat -tlpn | grep 'squid' | wc -l)" != '0' ]] && {
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mSQUID \033[1;31m>\033[1;37m>\033[1;32m>          \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(netstat -nplt | grep 'squid' | awk -F ":" {'print $4'} | xargs)")\033[1;37m┃"
-				sts1="\033[1;32m☑     "
+				sts1="\033[1;32m◉     "
 			} || {
-				sts1="\033[1;31m☒     "
+				sts1="\033[1;31m○     "
 			}
 			[[ "$(netstat -tunlp | grep 'trojan-go' | wc -l)" != '0' ]] && {
-				trojansts="\033[1;32m☑     "
+				trojansts="\033[1;32m◉     "
 			} || {
-				trojansts="\033[1;31m☒     "
+				trojansts="\033[1;31m○     "
 			}
 			[[ "$(netstat -tunlp | grep 'v2ray' | wc -l)" != '0' ]] && {
-				xv2ray="\033[1;32m☑     "
+				xv2ray="\033[1;32m◉     "
 			} || {
-				xv2ray="\033[1;31m☒     "
+				xv2ray="\033[1;31m○     "
 			}
 			echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
 			echo -e "\033[1;37m┃  \033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;37mOPENSSH     $sts6\033[1;31m  [\033[1;36m07\033[1;31m] \033[1;37m• \033[1;37mSSLH MULTIPLEX $sts7\033[1;31m \033[1;37m┃
