@@ -2140,7 +2140,6 @@ echo -ne "\033[1;37m┗━┫\033[1;32mO QUE DESEJA FAZER \033[1;31m? : "; read 
 				fun_drop
 				;;
 			4 | 04)
-			        clear
 				ovpn18
 				;;
 			5 | 05)
