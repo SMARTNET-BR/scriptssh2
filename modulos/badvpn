@@ -71,9 +71,9 @@ echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━�
             inst_udp
             fun_udpon
             echo ""
-	    clear
             echo -e "\033[1;32mBADVPN ATIVADO COM SUCESSO\033[1;37m"
             sleep 3
+	    clear
             fun_badvpn
         fi
     elif [[ "$resposta" = '2' ]]; then
@@ -100,9 +100,9 @@ echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━�
             }
             fun_abrirptbad
             echo ""
-	    clear
-            echo -e "\033[1;32mPORTA \033[1;31m$porta\033[1;37mATIVADA COM SUCESSO\033[1;37m"
+            echo -e "PORTA \033[1;32m$porta\033[1;37m ATIVADA COM SUCESSO"
             sleep 2
+	    clear
             fun_badvpn
         else
             clear
