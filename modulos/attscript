@@ -70,9 +70,9 @@ fun_atts () {
 
 } > /dev/null 2>&1
 
-echo -e "                              \033[1;31mNiltonjuniornzx\033[1;36m"
+echo -e "                              \033[1;31mSr_Wallker\033[1;36m"
 
-echo -e "   nzx on !!" | figlet
+echo -e "   MultiHD 4G!!" | figlet
 
 echo " "
 
@@ -102,7 +102,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
   rm /tmp/att > /dev/null 2>&1
 
-  echo -e " \033[1;37m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@Niltonjuniornzx\n"
+  echo -e " \033[1;37m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@Sr_Wallker\n"
 
   echo -ne " \033[1;31m ENTER \033[1;37mpara retornar ao \033[1;32mMENU!\033[0m"; read
 
