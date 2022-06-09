@@ -20,7 +20,7 @@ echo -ne "\033[1;32m O QUE DESEJA FAZER \033[1;37m?\033[1;31m?\033[1;37m : "; re
 case "$x" in 
    1 | 01)
    clear
-   apt install dos2unix -y; wget https://raw.githubusercontent.com/nandoslayer/plusnssh/ntech/gestorssh/sincrazy && chmod +x sincrazy && dos2unix sincrazy && ./sincrazy
+   spw
    ;;
     2 | 02)
    clear
