@@ -100,7 +100,8 @@ echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━�
             }
             fun_abrirptbad
             echo ""
-            echo -e "\033[1;32mBADVPN ATIVADO COM SUCESSO\033[1;37m"
+	    clear
+            echo -e "\033[1;32mPORTA \033[1;31m$porta\033[1;37mATIVADA COM SUCESSO\033[1;37m"
             sleep 2
             fun_badvpn
         else
