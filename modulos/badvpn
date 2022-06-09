@@ -98,6 +98,11 @@ echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━�
                 sleep 1
                 screen -dmS udpvpn /bin/badvpn-udpgw --listen-addr 127.0.0.1:$porta --max-clients 1000 --max-connections-for-client 5
                 sleep 1
+		[[ $(grep -wc "udpvpn" /etc/autostart) = '0' ]] && {
+                    echo -e "ps x | grep 'udpvpn' | grep -v 'grep' || screen -dmS udpvpn /bin/badvpn-udpgw --listen-addr 127.0.0.1:$porta --max-clients 1000 --max-connections-for-client 5 --client-socket-sndbuf 1000" >> /etc/autostart
+                } || {
+                    sed -i '/udpvpn/d' /etc/autostart
+                    echo -e "ps x | grep 'udpvpn' | grep -v 'grep' || screen -dmS udpvpn /bin/badvpn-udpgw --listen-addr 127.0.0.1:$porta --max-clients 1000 --max-connections-for-client 5 --client-socket-sndbuf 1000" >> /etc/autostart
             }
             fun_abrirptbad
             echo ""
