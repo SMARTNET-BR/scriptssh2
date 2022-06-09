@@ -2077,7 +2077,7 @@ exit 0' >$RCLOCAL
 				sts7="\033[1;31m○     "
 			}
 
-			[[ "$(netstat -tlpn | grep 'openvpn' | wc -l)" != '0' ]] && {
+			[[ "$(netstat -tlpn | grep 'ovpn18' | wc -l)" != '0' ]] && {
 			echo -e "\033[1;37m┃  \033[1;32mSERVICO: \033[1;37mOPENVPN \033[1;31m>\033[1;37m>\033[1;32m>        \033[1;32mPORTA: \033[1;37m$(printf '%-20s' "$(netstat -nplt | grep 'openvpn' | awk {'print $4'} | cut -d: -f2 | xargs)")\033[1;37m┃"
 				sts5="\033[1;32m◉     "
 			} || {
@@ -2140,8 +2140,8 @@ echo -ne "\033[1;37m┗━┫\033[1;32mO QUE DESEJA FAZER \033[1;31m? : "; read 
 				fun_drop
 				;;
 			4 | 04)
+			        clear
 				ovpn18
-				clear
 				;;
 			5 | 05)
 				fun_socks
