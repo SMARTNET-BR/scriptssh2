@@ -69,7 +69,7 @@ otimize_python() {
     update-alternatives --set python3 /usr/bin/python3.6
 }
 echo -e "\033[0;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ \033[0m"
-echo -e "\033[0;37m┃              BEM VINDO AO MultiHD 4G!!                \033[0;37m┃"
+echo -e "\033[0;37m┃              BEM VINDO AO MultiHD 4G!!              \033[0;37m┃"
 echo -e "\033[0;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
 echo -e "\033[0;37m┃                                                   \033[0;37m┃"          
 echo -e "\033[0;37m┃             \e[38;5;196mATENCAO! \033[1;37mESSE SCRIPT IRA !\033[0m            \033[0;37m┃"
