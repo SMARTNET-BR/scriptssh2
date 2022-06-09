@@ -186,6 +186,9 @@ _onlin=$(printf '%-5s' "$_onli")
 _userexp=$(printf '%-5s' "$_expuser")
 _tuser=$(printf '%-5s' "$(awk -F: '$3>=1000 {print $1}' /etc/passwd | grep -v nobody | wc -l)")
 clear
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[41;1;37m    MultiHD MANAGER GRATUITO BY Sr_Wallker  \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
 echo -e "\033[1;37m┃\033[38;5;82mSISTEMA              \033[1;37m| \033[38;5;82mMEMÓRIA RAM           \033[1;37m| \033[38;5;82mPROCESSADOR    \033[1;37m┃"
 echo -e "┃\033[38;5;196mOS: \033[1;37m$_system   | \033[38;5;196mTOTAL:\033[1;37m$_ram      | \033[38;5;196mNUCLEO: \033[1;37m$_core\033[0m  \033[1;37m┃"
@@ -299,6 +302,9 @@ stson=$(ps x | grep "onlineapp"|grep -v grep > /dev/null && echo -e "\033[1;32m(
 stsom=$(ps x | grep "shutdown -r 16:00"|grep -v grep > /dev/null && echo -e "\033[1;32m(ON ☑) " || echo -e "\033[1;31m(OFF☒) ")
 autm=$(grep "menu;" /etc/profile > /dev/null && echo -e "\033[1;32m(ON ☑) " || echo -e "\033[1;31m(OFF ☒)")
 clear
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[41;1;37m    MultiHD MANAGER GRATUITO BY Sr_Wallker  \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\033[1;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
 echo -e "\033[1;37m┃\033[38;5;82mSISTEMA              \033[1;37m| \033[38;5;82mMEMÓRIA RAM           \033[1;37m| \033[38;5;82mPROCESSADOR    \033[1;37m┃"
 echo -e "┃\033[38;5;196mOS: \033[1;37m$_system   | \033[38;5;196mTOTAL:\033[1;37m$_ram      | \033[38;5;196mNUCLEO: \033[1;37m$_core\033[0m  \033[1;37m┃"
