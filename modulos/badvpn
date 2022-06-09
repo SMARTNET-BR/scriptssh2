@@ -113,7 +113,6 @@ echo -e "\033[1;37m━━━━━━━━━━━━━━━━━━━━�
             sleep 2
 	    clear
             fun_badvpn
-        else
             clear
             echo -e "\033[1;31mFUNCAO INDISPONIVEL\n\n\033[1;37mATIVE O BADVPN PRIMEIRO !\033[1;37m"
             sleep 2
