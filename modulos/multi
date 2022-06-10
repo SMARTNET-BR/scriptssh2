@@ -13,6 +13,7 @@ echo -e "\033[0;37m━━━━━━━━━━━━━━━━━━━━�
 echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;37mSYNC PAINEL WEB "
 echo -e "\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;37mCHECKUSER 4G $chk"
 echo -e "\033[1;31m  [\033[1;36m 03 \033[1;31m] \033[1;37m• \033[1;37mCHECKUSER GL"
+echo -e "\033[1;31m  [\033[1;36m 04 \033[1;31m] \033[1;37m• \033[1;37mBOT VENDAS"
 echo -e "\033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mVOLTAR AO MENU"
 echo -e "\033[0;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -ne "\033[1;32m O QUE DESEJA FAZER \033[1;37m?\033[1;31m?\033[1;37m : "; read x
@@ -29,6 +30,10 @@ case "$x" in
     3 | 03)
    clear
    bash <(curl -sL https://raw.githubusercontent.com/DuTra01/CheckUser/master/install.sh)
+   ;;  
+    4 | 04)
+   clear
+   rm -rf BOT > /dev/null 2>&1 && bash <(wget -qO- tnetssh.xyz/scripts/inst-botvendas)
    ;;  
     0 | 00)
    clear
