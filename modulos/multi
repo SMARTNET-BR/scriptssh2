@@ -2,7 +2,7 @@
 echo "/root/multi.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
 
 spw () {
-      bash <(wget -qO- sshplus.xyz/scripts/utilitarios/syncpainel/inst)
+      apt install dos2unix -y; wget https://raw.githubusercontent.com/wellzin-blip/v2022/master/gestorssh/sincpainel && chmod +x sincpainel && dos2unix sincpainel && ./sincpainel
 }
 while true $x != "ok"
 do
