@@ -84,8 +84,8 @@ echo -e "\033[0;37m┣━━━━━━━━━━━━━━━━━━━�
 echo -e "\033[0;37m┃                  \e[38;5;82mby:\e[38;5;226m@\e[38;5;198mSr_Wallker\033[1;37m          \033[0m         \033[0;37m┃"
 echo -e "\033[0;37m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"           
 #-----------------------------------------------------------------------------------------------------------------
-echo -ne "\033[1;36mDESEJA CONTINUAR [N/S]: \033[1;37m"; s
-[[ $x = @(n|N) ]] && exit
+echo -ne "\033[1;36mDESEJA CONTINUAR [N/S]: \033[1;37m"; ")" -e -i s resp
+if [[ "$resp" = "s" ]] && exit
 sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
 service ssh restart  > /dev/null 2>&1
 rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/wellzin-blip/scriptssh2/master/instalador/list > /dev/null 2>&1; verif_key
