@@ -7,6 +7,6 @@ mkdir $HOME/BOT
 cd $HOME/BOT && wget github.com/wellzin-blip/scriptssh2/raw/master/instalador/botvendas.zip
 unzip botvendas.zip > /dev/null 2>&1 && rm botvendas.zip > /dev/null 2>&1
 chmod +x $(ls)
-mv botvendas /bin/botvendas
+mv botteste /bin/botteste
 && echo -e "INSTALADO COM SUCESSO !\nPARA ATIVAR EXECUTE O COMANDO botteste"
-cd $HOME && rm inst-botvendas > /dev/null 2>&1
+cd $HOME && rm inst-botteste > /dev/null 2>&1
