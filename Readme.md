@@ -1,4 +1,4 @@
-# PROJETO DESCONTINUADO SEM SUPORTE
+# PROJETO EM ANDAMENTO
 
 
 # Atualizar Pacotes do Sistema
