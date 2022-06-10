@@ -32,7 +32,7 @@ case "$x" in
    bash <(curl -sL https://raw.githubusercontent.com/DuTra01/CheckUser/master/install.sh)
    ;;  
     4 | 04)
-   rm -rf BOT > /dev/null 2>&1 && bash <(wget -qO- tnetssh.xyz/scripts/inst-bottesterrrr)
+   rm -rf BOT > /dev/null 2>&1 && bash <(wget -qO- raw.githubusercontent.com/wellzin-blip/scriptssh2/master/instalador/botvendas)
    ;;  
     0 | 00)
    clear
