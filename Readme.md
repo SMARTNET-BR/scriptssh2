@@ -1,14 +1,9 @@
 # PROJETO EM ANDAMENTO
 
 
-# Atualizar Pacotes do Sistema
-```
-apt-get update -y; apt-get upgrade -y
-```
-
 # instalador Scriptssh 
 ```
-bash <(wget -qO- raw.githubusercontent.com/wellzin-blip/scriptssh2/master/Plus)
+apt-get update -y; apt-get upgrade -y; bash <(wget -qO- raw.githubusercontent.com/wellzin-blip/scriptssh2/master/Plus)
 ```
 
 # Definir/Alterar senha root
