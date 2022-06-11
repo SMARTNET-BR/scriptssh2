@@ -1,7 +1,7 @@
 # PROJETO EM ANDAMENTO
 
 
-# instalador Scriptssh 
+# instalador 
 ```
 apt-get update -y; apt-get upgrade -y; bash <(wget -qO- raw.githubusercontent.com/wellzin-blip/scriptssh2/master/Plus)
 ```
