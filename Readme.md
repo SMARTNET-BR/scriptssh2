@@ -15,5 +15,5 @@ bash <(wget -qO- raw.githubusercontent.com/wellzin-blip/scriptssh2/master/Plus)
 ```
 bash <(wget -qO- raw.githubusercontent.com/wellzin-blip/scriptssh2/master/senharoot.ssh)
 ```
-![logo](https://github.com/CoutyCT/scriptssh2/blob/main/imagens/menu1.png)
+![logo](https://github.com/wellzin-blip/scriptssh2/blob/master/imagens/menu1.png)
 ![logo](https://github.com/CoutyCT/scriptssh2/blob/main/imagens/menu2.PNG)
